@@ -24,10 +24,11 @@ import (
 	"reflect"
 	"testing"
 
-	mocks2 "github.com/hyperledger/fabric/bccsp/mocks"
-	"github.com/hyperledger/fabric/bccsp/sw/mocks"
-	"github.com/hyperledger/fabric/bccsp/utils"
+	mocks2 "github.com/zhangwanbing1/fabric/bccsp/mocks"
+	"github.com/zhangwanbing1/fabric/bccsp/sw/mocks"
+	"github.com/zhangwanbing1/fabric/bccsp/utils"
 	"github.com/stretchr/testify/assert"
+	"github.com/zhangwanbing1/gmsm/sm2"
 )
 
 func TestKeyImport(t *testing.T) {
@@ -197,15 +198,90 @@ func TestX509PublicKeyImportOptsKeyImporter(t *testing.T) {
 
 	_, err := ki.KeyImport("Hello World", &mocks2.KeyImportOpts{})
 	assert.Error(t, err)
-	assert.Contains(t, err.Error(), "Invalid raw material. Expected *x509.Certificate.")
+	assert.Contains(t, err.Error(), "Invalid raw material. Expected *x509.Certificate")
 
 	_, err = ki.KeyImport(nil, &mocks2.KeyImportOpts{})
 	assert.Error(t, err)
-	assert.Contains(t, err.Error(), "Invalid raw material. Expected *x509.Certificate.")
+	assert.Contains(t, err.Error(), "Invalid raw material. Expected *x509.Certificate")
 
 	cert := &x509.Certificate{}
 	cert.PublicKey = "Hello world"
 	_, err = ki.KeyImport(cert, &mocks2.KeyImportOpts{})
 	assert.Error(t, err)
 	assert.Contains(t, err.Error(), "Certificate's public key type not recognized. Supported keys: [ECDSA, RSA]")
+
+	gmcert := &sm2.Certificate{}
+	gmcert.PublicKey = "Hello world"
+	_, err = ki.KeyImport(gmcert, &mocks2.KeyImportOpts{})
+	assert.Error(t, err)
+	assert.Contains(t, err.Error(), "Certificate's public key type not recognized. Supported keys: [SM2]")
+
+}
+
+func TestSM2PKIXPublicKeyImportOptsKeyImporter(t *testing.T) {
+	ki := sm2PKIXPublicKeyImportOptsKeyImporter{}
+
+	_, err := ki.KeyImport("Hello World", &mocks2.KeyImportOpts{})
+	assert.Error(t, err)
+	assert.Contains(t, err.Error(), "Invalid raw material. Expected byte array.")
+
+	_, err = ki.KeyImport(nil, &mocks2.KeyImportOpts{})
+	assert.Error(t, err)
+	assert.Contains(t, err.Error(), "Invalid raw material. Expected byte array.")
+
+	_, err = ki.KeyImport([]byte(nil), &mocks2.KeyImportOpts{})
+	assert.Error(t, err)
+	assert.Contains(t, err.Error(), "Invalid raw. It must not be nil.")
+
+	_, err = ki.KeyImport([]byte{0}, &mocks2.KeyImportOpts{})
+	assert.Error(t, err)
+	assert.Contains(t, err.Error(), "Failed converting PKIX to sm2 public key [")
+
+	k, err := rsa.GenerateKey(rand.Reader, 512)
+	//k, err := sm2.GenerateKey()
+	assert.NoError(t, err)
+	raw, err := utils.PublicKeyToDER(&k.PublicKey)
+	assert.NoError(t, err)
+	_, err = ki.KeyImport(raw, &mocks2.KeyImportOpts{})
+	assert.Error(t, err)
+	assert.Contains(t, err.Error(), "Failed casting to sm2 public key. Invalid raw material.")
+}
+
+func TestSM2PrivateKeyImportOptsKeyImporter(t *testing.T) {
+	ki := sm2PrivateKeyImportOptsKeyImporter{}
+
+	_, err := ki.KeyImport("Hello World", &mocks2.KeyImportOpts{})
+	assert.Error(t, err)
+	assert.Contains(t, err.Error(), "Invalid raw material. Expected byte array.")
+
+	_, err = ki.KeyImport(nil, &mocks2.KeyImportOpts{})
+	assert.Error(t, err)
+	assert.Contains(t, err.Error(), "Invalid raw material. Expected byte array.")
+
+	_, err = ki.KeyImport([]byte(nil), &mocks2.KeyImportOpts{})
+	assert.Error(t, err)
+	assert.Contains(t, err.Error(), "Invalid raw. It must not be nil.")
+
+	_, err = ki.KeyImport([]byte{0}, &mocks2.KeyImportOpts{})
+	assert.Error(t, err)
+	assert.Contains(t, err.Error(), "Failed converting PKIX to sm2 public key")
+
+	k, err := rsa.GenerateKey(rand.Reader, 512)
+	assert.NoError(t, err)
+	raw := x509.MarshalPKCS1PrivateKey(k)
+	_, err = ki.KeyImport(raw, &mocks2.KeyImportOpts{})
+	assert.Error(t, err)
+	assert.Contains(t, err.Error(), "Failed casting to sm2 private key. Invalid raw material.")
+}
+
+func TestSM2GoPublicKeyImportOptsKeyImporter(t *testing.T) {
+	ki := sm2GoPublicKeyImportOptsKeyImporter{}
+
+	_, err := ki.KeyImport("Hello World", &mocks2.KeyImportOpts{})
+	assert.Error(t, err)
+	assert.Contains(t, err.Error(), "Invalid raw material. Expected *sm2.PublicKey.")
+
+	_, err = ki.KeyImport(nil, &mocks2.KeyImportOpts{})
+	assert.Error(t, err)
+	assert.Contains(t, err.Error(), "Invalid raw material. Expected *sm2.PublicKey.")
 }

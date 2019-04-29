@@ -18,9 +18,15 @@ package utils
 
 import (
 	"crypto/x509"
+
+	"github.com/zhangwanbing1/gmsm/sm2"
 )
 
 // DERToX509Certificate converts der to x509
 func DERToX509Certificate(asn1Data []byte) (*x509.Certificate, error) {
 	return x509.ParseCertificate(asn1Data)
+}
+
+func DERToSM2X509Certificate(asn1Data []byte) (*sm2.Certificate, error) {
+	return sm2.ParseCertificate(asn1Data)
 }

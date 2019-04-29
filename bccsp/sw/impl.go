@@ -16,12 +16,14 @@ limitations under the License.
 package sw
 
 import (
+	"encoding/hex"
 	"hash"
 	"reflect"
 
 	"github.com/hyperledger/fabric/bccsp"
 	"github.com/hyperledger/fabric/common/flogging"
 	"github.com/pkg/errors"
+	"github.com/warm3snow/gmsm/sm2"
 )
 
 var (
@@ -92,6 +94,8 @@ func (csp *CSP) KeyGen(opts bccsp.KeyGenOpts) (k bccsp.Key, err error) {
 			return nil, errors.Wrapf(err, "Failed storing key [%s]", opts.Algorithm())
 		}
 	}
+
+	logger.Infof("SKI[%s], Ephemeral[%t]", hex.EncodeToString(k.SKI()), opts.Ephemeral())
 
 	return k, nil
 }

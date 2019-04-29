@@ -18,6 +18,7 @@ import (
 	"github.com/hyperledger/fabric/bccsp"
 	"github.com/hyperledger/fabric/bccsp/factory"
 	"github.com/hyperledger/fabric/bccsp/signer"
+	cspx509 "github.com/hyperledger/fabric/bccsp/x509"
 	m "github.com/hyperledger/fabric/protos/msp"
 	"github.com/pkg/errors"
 )
@@ -78,7 +79,7 @@ type bccspmsp struct {
 	name string
 
 	// verification options for MSP members
-	opts *x509.VerifyOptions
+	opts *cspx509.VerifyOptions
 
 	// list of certificate revocation lists
 	CRL []*pkix.CertificateList
@@ -140,7 +141,7 @@ func (msp *bccspmsp) getCertFromPem(idBytes []byte) (*x509.Certificate, error) {
 
 	// get a cert
 	var cert *x509.Certificate
-	cert, err := x509.ParseCertificate(pemCert.Bytes)
+	cert, err := cspx509.ParseCertificate(pemCert.Bytes)
 	if err != nil {
 		return nil, errors.Wrap(err, "getCertFromPem error: failed to parse x509 cert")
 	}
@@ -180,14 +181,14 @@ func (msp *bccspmsp) getSigningIdentityFromConf(sidInfo *m.SigningIdentityInfo) 
 	// Find the matching private key in the BCCSP keystore
 	privKey, err := msp.bccsp.GetKey(pubKey.SKI())
 	// Less Secure: Attempt to import Private Key from KeyInfo, if BCCSP was not able to find the key
-	if err != nil {
+	if err != nil || !privKey.Private() {
 		mspLogger.Debugf("Could not find SKI [%s], trying KeyMaterial field: %+v\n", hex.EncodeToString(pubKey.SKI()), err)
 		if sidInfo.PrivateSigner == nil || sidInfo.PrivateSigner.KeyMaterial == nil {
 			return nil, errors.New("KeyMaterial not found in SigningIdentityInfo")
 		}
 
 		pemKey, _ := pem.Decode(sidInfo.PrivateSigner.KeyMaterial)
-		privKey, err = msp.bccsp.KeyImport(pemKey.Bytes, &bccsp.ECDSAPrivateKeyImportOpts{Temporary: true})
+		privKey, err = msp.bccsp.KeyImport(pemKey.Bytes, &bccsp.SM2PrivateKeyImportOpts{Temporary: true})
 		if err != nil {
 			return nil, errors.WithMessage(err, "getIdentityFromBytes error: Failed to import EC private key")
 		}
@@ -357,7 +358,7 @@ func (msp *bccspmsp) deserializeIdentityInternal(serializedIdentity []byte) (Ide
 	if bl == nil {
 		return nil, errors.New("could not decode the PEM structure")
 	}
-	cert, err := x509.ParseCertificate(bl.Bytes)
+	cert, err := cspx509.ParseCertificate(bl.Bytes)
 	if err != nil {
 		return nil, errors.Wrap(err, "parseCertificate failed")
 	}
@@ -601,7 +602,7 @@ func (msp *bccspmsp) getUniqueValidationChain(cert *x509.Certificate, opts x509.
 	if msp.opts == nil {
 		return nil, errors.New("the supplied identity has no verify options")
 	}
-	validationChains, err := cert.Verify(opts)
+	validationChains, err := cspx509.Verify(cert, opts)
 	if err != nil {
 		return nil, errors.WithMessage(err, "the supplied identity is not valid")
 	}

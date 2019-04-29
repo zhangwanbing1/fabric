@@ -18,6 +18,7 @@ import (
 	"reflect"
 
 	"github.com/pkg/errors"
+	cspx509 "github.com/zhangwanbing1/fabric/bccsp/x509"
 )
 
 func (msp *bccspmsp) validateIdentity(id *identity) error {
@@ -56,7 +57,7 @@ func (msp *bccspmsp) validateCAIdentity(id *identity) error {
 	return msp.validateIdentityAgainstChain(id, validationChain)
 }
 
-func (msp *bccspmsp) validateTLSCAIdentity(cert *x509.Certificate, opts *x509.VerifyOptions) error {
+func (msp *bccspmsp) validateTLSCAIdentity(cert *x509.Certificate, opts *cspx509.VerifyOptions) error {
 	if !cert.IsCA {
 		return errors.New("Only CA identities can be validated")
 	}
@@ -205,13 +206,13 @@ func (msp *bccspmsp) validateIdentityOUsV11(id *identity) error {
 	return nil
 }
 
-func (msp *bccspmsp) getValidityOptsForCert(cert *x509.Certificate) x509.VerifyOptions {
+func (msp *bccspmsp) getValidityOptsForCert(cert *x509.Certificate) cspx509.VerifyOptions {
 	// First copy the opts to override the CurrentTime field
 	// in order to make the certificate passing the expiration test
 	// independently from the real local current time.
 	// This is a temporary workaround for FAB-3678
 
-	var tempOpts x509.VerifyOptions
+	var tempOpts cspx509.VerifyOptions
 	tempOpts.Roots = msp.opts.Roots
 	tempOpts.DNSName = msp.opts.DNSName
 	tempOpts.Intermediates = msp.opts.Intermediates
