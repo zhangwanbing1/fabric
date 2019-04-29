@@ -27,7 +27,7 @@ import (
 	"github.com/hyperledger/fabric/bccsp"
 	"github.com/hyperledger/fabric/bccsp/utils"
 	"github.com/warm3snow/gmsm/sm2"
-	sm2Utils "github.com/hyperledger/gmsm/utils"
+	sm2Utils "github.com/warm3snow/gmsm/utils"
 )
 
 type sm2PKIXPublicKeyImportOptsKeyImporter struct{}

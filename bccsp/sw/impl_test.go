@@ -44,7 +44,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"golang.org/x/crypto/sha3"
 	"github.com/warm3snow/gmsm/sm2"
-	sm2Utils "github.com/hyperledger/gmsm/utils"
+	sm2Utils "github.com/warm3snow/gmsm/utils"
 )
 
 var (
