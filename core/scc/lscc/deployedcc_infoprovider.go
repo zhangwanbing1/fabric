@@ -8,11 +8,11 @@ package lscc
 
 import (
 	"github.com/golang/protobuf/proto"
-	"github.com/hyperledger/fabric/core/common/ccprovider"
-	"github.com/hyperledger/fabric/core/common/privdata"
-	"github.com/hyperledger/fabric/core/ledger"
-	"github.com/hyperledger/fabric/protos/common"
-	"github.com/hyperledger/fabric/protos/ledger/rwset/kvrwset"
+	"github.com/zhangwanbing1/fabric/core/common/ccprovider"
+	"github.com/zhangwanbing1/fabric/core/common/privdata"
+	"github.com/zhangwanbing1/fabric/core/ledger"
+	"github.com/zhangwanbing1/fabric/protos/common"
+	"github.com/zhangwanbing1/fabric/protos/ledger/rwset/kvrwset"
 	"github.com/pkg/errors"
 )
 

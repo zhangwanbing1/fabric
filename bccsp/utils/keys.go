@@ -28,7 +28,7 @@ import (
 	"fmt"
 	"strings"
 
-	cspx509 "github.com/hyperledger/fabric/bccsp/x509"
+	cspx509 "github.com/zhangwanbing1/fabric/bccsp/x509"
 	"github.com/op/go-logging"
 	"github.com/warm3snow/gmsm/sm2"
 )

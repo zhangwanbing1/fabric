@@ -4,10 +4,10 @@
 package main
 
 import (
-	"github.com/hyperledger/fabric/common/localmsp"
-	"github.com/hyperledger/fabric/common/tools/configtxgen/encoder"
-	genesisconfig "github.com/hyperledger/fabric/common/tools/configtxgen/localconfig"
-	cb "github.com/hyperledger/fabric/protos/common"
+	"github.com/zhangwanbing1/fabric/common/localmsp"
+	"github.com/zhangwanbing1/fabric/common/tools/configtxgen/encoder"
+	genesisconfig "github.com/zhangwanbing1/fabric/common/tools/configtxgen/localconfig"
+	cb "github.com/zhangwanbing1/fabric/protos/common"
 )
 
 func newChainRequest(consensusType, creationPolicy, newChannelID string) *cb.Envelope {

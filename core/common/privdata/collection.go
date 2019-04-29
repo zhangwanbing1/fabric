@@ -9,9 +9,9 @@ package privdata
 import (
 	"strings"
 
-	"github.com/hyperledger/fabric/core/ledger"
-	"github.com/hyperledger/fabric/protos/common"
-	pb "github.com/hyperledger/fabric/protos/peer"
+	"github.com/zhangwanbing1/fabric/core/ledger"
+	"github.com/zhangwanbing1/fabric/protos/common"
+	pb "github.com/zhangwanbing1/fabric/protos/peer"
 )
 
 // Collection defines a common interface for collections

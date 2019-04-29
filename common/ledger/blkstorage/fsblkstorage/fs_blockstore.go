@@ -17,11 +17,11 @@ limitations under the License.
 package fsblkstorage
 
 import (
-	"github.com/hyperledger/fabric/common/ledger"
-	"github.com/hyperledger/fabric/common/ledger/blkstorage"
-	"github.com/hyperledger/fabric/common/ledger/util/leveldbhelper"
-	"github.com/hyperledger/fabric/protos/common"
-	"github.com/hyperledger/fabric/protos/peer"
+	"github.com/zhangwanbing1/fabric/common/ledger"
+	"github.com/zhangwanbing1/fabric/common/ledger/blkstorage"
+	"github.com/zhangwanbing1/fabric/common/ledger/util/leveldbhelper"
+	"github.com/zhangwanbing1/fabric/protos/common"
+	"github.com/zhangwanbing1/fabric/protos/peer"
 )
 
 // fsBlockStore - filesystem based implementation for `BlockStore`

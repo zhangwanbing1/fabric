@@ -7,16 +7,16 @@
 package peer
 
 import (
-	"github.com/hyperledger/fabric/common/channelconfig"
-	"github.com/hyperledger/fabric/common/metrics"
-	"github.com/hyperledger/fabric/common/policies"
-	"github.com/hyperledger/fabric/core/chaincode/platforms"
-	"github.com/hyperledger/fabric/core/committer/txvalidator"
-	"github.com/hyperledger/fabric/core/common/ccprovider"
-	"github.com/hyperledger/fabric/core/common/sysccprovider"
-	"github.com/hyperledger/fabric/core/ledger"
-	"github.com/hyperledger/fabric/protos/common"
-	pb "github.com/hyperledger/fabric/protos/peer"
+	"github.com/zhangwanbing1/fabric/common/channelconfig"
+	"github.com/zhangwanbing1/fabric/common/metrics"
+	"github.com/zhangwanbing1/fabric/common/policies"
+	"github.com/zhangwanbing1/fabric/core/chaincode/platforms"
+	"github.com/zhangwanbing1/fabric/core/committer/txvalidator"
+	"github.com/zhangwanbing1/fabric/core/common/ccprovider"
+	"github.com/zhangwanbing1/fabric/core/common/sysccprovider"
+	"github.com/zhangwanbing1/fabric/core/ledger"
+	"github.com/zhangwanbing1/fabric/protos/common"
+	pb "github.com/zhangwanbing1/fabric/protos/peer"
 )
 
 // Operations exposes an interface to the package level functions that operated

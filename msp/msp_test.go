@@ -21,14 +21,14 @@ import (
 	"time"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/hyperledger/fabric/bccsp"
-	"github.com/hyperledger/fabric/bccsp/factory"
-	"github.com/hyperledger/fabric/bccsp/sw"
-	"github.com/hyperledger/fabric/bccsp/utils"
-	"github.com/hyperledger/fabric/core/config/configtest"
-	"github.com/hyperledger/fabric/protos/msp"
+	"github.com/zhangwanbing1/fabric/bccsp"
+	"github.com/zhangwanbing1/fabric/bccsp/factory"
+	"github.com/zhangwanbing1/fabric/bccsp/sw"
+	"github.com/zhangwanbing1/fabric/bccsp/utils"
+	"github.com/zhangwanbing1/fabric/core/config/configtest"
+	"github.com/zhangwanbing1/fabric/protos/msp"
 	"github.com/stretchr/testify/assert"
-	cspx509 "github.com/hyperledger/fabric/bccsp/x509"
+	cspx509 "github.com/zhangwanbing1/fabric/bccsp/x509"
 )
 
 var notACert = `-----BEGIN X509 CRL-----

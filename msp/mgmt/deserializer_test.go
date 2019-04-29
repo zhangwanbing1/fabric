@@ -11,8 +11,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/hyperledger/fabric/core/config/configtest"
-	"github.com/hyperledger/fabric/msp"
+	"github.com/zhangwanbing1/fabric/core/config/configtest"
+	"github.com/zhangwanbing1/fabric/msp"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -9,17 +9,17 @@ package multichannel
 import (
 	"testing"
 
-	newchannelconfig "github.com/hyperledger/fabric/common/channelconfig"
-	"github.com/hyperledger/fabric/common/crypto"
-	"github.com/hyperledger/fabric/common/ledger/blockledger"
-	ramledger "github.com/hyperledger/fabric/common/ledger/blockledger/ram"
-	mockconfigtx "github.com/hyperledger/fabric/common/mocks/configtx"
-	"github.com/hyperledger/fabric/common/tools/configtxgen/configtxgentest"
-	"github.com/hyperledger/fabric/common/tools/configtxgen/encoder"
-	genesisconfig "github.com/hyperledger/fabric/common/tools/configtxgen/localconfig"
-	cb "github.com/hyperledger/fabric/protos/common"
-	"github.com/hyperledger/fabric/protos/orderer"
-	"github.com/hyperledger/fabric/protos/utils"
+	newchannelconfig "github.com/zhangwanbing1/fabric/common/channelconfig"
+	"github.com/zhangwanbing1/fabric/common/crypto"
+	"github.com/zhangwanbing1/fabric/common/ledger/blockledger"
+	ramledger "github.com/zhangwanbing1/fabric/common/ledger/blockledger/ram"
+	mockconfigtx "github.com/zhangwanbing1/fabric/common/mocks/configtx"
+	"github.com/zhangwanbing1/fabric/common/tools/configtxgen/configtxgentest"
+	"github.com/zhangwanbing1/fabric/common/tools/configtxgen/encoder"
+	genesisconfig "github.com/zhangwanbing1/fabric/common/tools/configtxgen/localconfig"
+	cb "github.com/zhangwanbing1/fabric/protos/common"
+	"github.com/zhangwanbing1/fabric/protos/orderer"
+	"github.com/zhangwanbing1/fabric/protos/utils"
 	"github.com/stretchr/testify/assert"
 )
 

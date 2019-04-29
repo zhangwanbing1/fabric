@@ -17,8 +17,8 @@ limitations under the License.
 package genesis
 
 import (
-	cb "github.com/hyperledger/fabric/protos/common"
-	"github.com/hyperledger/fabric/protos/utils"
+	cb "github.com/zhangwanbing1/fabric/protos/common"
+	"github.com/zhangwanbing1/fabric/protos/utils"
 )
 
 const (

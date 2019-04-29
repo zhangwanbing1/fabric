@@ -14,8 +14,8 @@ import (
 	"time"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/hyperledger/fabric/bccsp"
-	m "github.com/hyperledger/fabric/protos/msp"
+	"github.com/zhangwanbing1/fabric/bccsp"
+	m "github.com/zhangwanbing1/fabric/protos/msp"
 	cspx509 "github.com/zhangwanbing1/fabric/bccsp/x509"
 	"github.com/pkg/errors"
 )

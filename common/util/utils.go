@@ -26,9 +26,9 @@ import (
 	"time"
 
 	"github.com/golang/protobuf/ptypes/timestamp"
-	"github.com/hyperledger/fabric/bccsp"
-	"github.com/hyperledger/fabric/bccsp/factory"
-	"github.com/hyperledger/fabric/common/metadata"
+	"github.com/zhangwanbing1/fabric/bccsp"
+	"github.com/zhangwanbing1/fabric/bccsp/factory"
+	"github.com/zhangwanbing1/fabric/common/metadata"
 )
 
 type alg struct {

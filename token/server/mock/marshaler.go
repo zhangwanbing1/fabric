@@ -4,8 +4,8 @@ package mock
 import (
 	"sync"
 
-	"github.com/hyperledger/fabric/protos/token"
-	"github.com/hyperledger/fabric/token/server"
+	"github.com/zhangwanbing1/fabric/protos/token"
+	"github.com/zhangwanbing1/fabric/token/server"
 )
 
 type Marshaler struct {

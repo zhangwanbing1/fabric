@@ -15,21 +15,21 @@ import (
 	"fmt"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/hyperledger/fabric/common/channelconfig"
-	"github.com/hyperledger/fabric/common/config"
-	"github.com/hyperledger/fabric/common/flogging"
-	"github.com/hyperledger/fabric/core/aclmgmt"
-	"github.com/hyperledger/fabric/core/aclmgmt/resources"
-	"github.com/hyperledger/fabric/core/chaincode/shim"
-	"github.com/hyperledger/fabric/core/common/ccprovider"
-	"github.com/hyperledger/fabric/core/common/sysccprovider"
-	"github.com/hyperledger/fabric/core/ledger/util"
-	"github.com/hyperledger/fabric/core/peer"
-	"github.com/hyperledger/fabric/core/policy"
-	"github.com/hyperledger/fabric/msp/mgmt"
-	"github.com/hyperledger/fabric/protos/common"
-	pb "github.com/hyperledger/fabric/protos/peer"
-	"github.com/hyperledger/fabric/protos/utils"
+	"github.com/zhangwanbing1/fabric/common/channelconfig"
+	"github.com/zhangwanbing1/fabric/common/config"
+	"github.com/zhangwanbing1/fabric/common/flogging"
+	"github.com/zhangwanbing1/fabric/core/aclmgmt"
+	"github.com/zhangwanbing1/fabric/core/aclmgmt/resources"
+	"github.com/zhangwanbing1/fabric/core/chaincode/shim"
+	"github.com/zhangwanbing1/fabric/core/common/ccprovider"
+	"github.com/zhangwanbing1/fabric/core/common/sysccprovider"
+	"github.com/zhangwanbing1/fabric/core/ledger/util"
+	"github.com/zhangwanbing1/fabric/core/peer"
+	"github.com/zhangwanbing1/fabric/core/policy"
+	"github.com/zhangwanbing1/fabric/msp/mgmt"
+	"github.com/zhangwanbing1/fabric/protos/common"
+	pb "github.com/zhangwanbing1/fabric/protos/peer"
+	"github.com/zhangwanbing1/fabric/protos/utils"
 	"github.com/pkg/errors"
 )
 
@@ -50,7 +50,7 @@ func New(ccp ccprovider.ChaincodeProvider, sccp sysccprovider.SystemChaincodePro
 }
 
 func (e *PeerConfiger) Name() string              { return "cscc" }
-func (e *PeerConfiger) Path() string              { return "github.com/hyperledger/fabric/core/scc/cscc" }
+func (e *PeerConfiger) Path() string              { return "github.com/zhangwanbing1/fabric/core/scc/cscc" }
 func (e *PeerConfiger) InitArgs() [][]byte        { return nil }
 func (e *PeerConfiger) Chaincode() shim.Chaincode { return e }
 func (e *PeerConfiger) InvokableExternal() bool   { return true }

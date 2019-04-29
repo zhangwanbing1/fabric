@@ -11,10 +11,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/hyperledger/fabric/common/flogging"
-	"github.com/hyperledger/fabric/core/testutil"
-	"github.com/hyperledger/fabric/protos/common"
-	pb "github.com/hyperledger/fabric/protos/peer"
+	"github.com/zhangwanbing1/fabric/common/flogging"
+	"github.com/zhangwanbing1/fabric/core/testutil"
+	"github.com/zhangwanbing1/fabric/protos/common"
+	pb "github.com/zhangwanbing1/fabric/protos/peer"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 )

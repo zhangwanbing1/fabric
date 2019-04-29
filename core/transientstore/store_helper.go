@@ -11,11 +11,11 @@ import (
 	"errors"
 	"path/filepath"
 
-	"github.com/hyperledger/fabric/common/ledger/util"
-	"github.com/hyperledger/fabric/core/config"
-	"github.com/hyperledger/fabric/core/ledger"
-	"github.com/hyperledger/fabric/protos/common"
-	"github.com/hyperledger/fabric/protos/ledger/rwset"
+	"github.com/zhangwanbing1/fabric/common/ledger/util"
+	"github.com/zhangwanbing1/fabric/core/config"
+	"github.com/zhangwanbing1/fabric/core/ledger"
+	"github.com/zhangwanbing1/fabric/protos/common"
+	"github.com/zhangwanbing1/fabric/protos/ledger/rwset"
 )
 
 var (

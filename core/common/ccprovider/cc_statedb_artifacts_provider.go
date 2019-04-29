@@ -15,7 +15,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/hyperledger/fabric/core/chaincode/platforms"
+	"github.com/zhangwanbing1/fabric/core/chaincode/platforms"
 )
 
 const (

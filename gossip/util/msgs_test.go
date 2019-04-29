@@ -9,8 +9,8 @@ package util
 import (
 	"testing"
 
-	"github.com/hyperledger/fabric/gossip/common"
-	proto "github.com/hyperledger/fabric/protos/gossip"
+	"github.com/zhangwanbing1/fabric/gossip/common"
+	proto "github.com/zhangwanbing1/fabric/protos/gossip"
 	"github.com/stretchr/testify/assert"
 )
 

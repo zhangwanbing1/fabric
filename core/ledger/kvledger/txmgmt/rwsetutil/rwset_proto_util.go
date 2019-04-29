@@ -18,10 +18,10 @@ package rwsetutil
 
 import (
 	"github.com/golang/protobuf/proto"
-	"github.com/hyperledger/fabric/core/ledger/kvledger/txmgmt/version"
-	"github.com/hyperledger/fabric/core/ledger/util"
-	"github.com/hyperledger/fabric/protos/ledger/rwset"
-	"github.com/hyperledger/fabric/protos/ledger/rwset/kvrwset"
+	"github.com/zhangwanbing1/fabric/core/ledger/kvledger/txmgmt/version"
+	"github.com/zhangwanbing1/fabric/core/ledger/util"
+	"github.com/zhangwanbing1/fabric/protos/ledger/rwset"
+	"github.com/zhangwanbing1/fabric/protos/ledger/rwset/kvrwset"
 )
 
 /////////////////////////////////////////////////////////////////

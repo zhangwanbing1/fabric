@@ -9,9 +9,9 @@ package api
 import (
 	"context"
 
-	"github.com/hyperledger/fabric/peer/chaincode/api"
-	cb "github.com/hyperledger/fabric/protos/common"
-	ab "github.com/hyperledger/fabric/protos/orderer"
+	"github.com/zhangwanbing1/fabric/peer/chaincode/api"
+	cb "github.com/zhangwanbing1/fabric/protos/common"
+	ab "github.com/zhangwanbing1/fabric/protos/orderer"
 	"google.golang.org/grpc"
 )
 

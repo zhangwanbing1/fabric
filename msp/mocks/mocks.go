@@ -9,8 +9,8 @@ package mocks
 import (
 	"time"
 
-	"github.com/hyperledger/fabric/msp"
-	pmsp "github.com/hyperledger/fabric/protos/msp"
+	"github.com/zhangwanbing1/fabric/msp"
+	pmsp "github.com/zhangwanbing1/fabric/protos/msp"
 	"github.com/stretchr/testify/mock"
 )
 

@@ -10,10 +10,10 @@ import (
 	"crypto/ecdsa"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/hyperledger/fabric-amcl/amcl/FP256BN"
-	"github.com/hyperledger/fabric/idemix"
-	"github.com/hyperledger/fabric/msp"
-	m "github.com/hyperledger/fabric/protos/msp"
+	"github.com/zhangwanbing1/fabric-amcl/amcl/FP256BN"
+	"github.com/zhangwanbing1/fabric/idemix"
+	"github.com/zhangwanbing1/fabric/msp"
+	m "github.com/zhangwanbing1/fabric/protos/msp"
 	"github.com/pkg/errors"
 )
 

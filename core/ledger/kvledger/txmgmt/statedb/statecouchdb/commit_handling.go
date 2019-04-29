@@ -8,9 +8,9 @@ package statecouchdb
 import (
 	"fmt"
 
-	"github.com/hyperledger/fabric/core/ledger/kvledger/txmgmt/statedb"
-	"github.com/hyperledger/fabric/core/ledger/ledgerconfig"
-	"github.com/hyperledger/fabric/core/ledger/util/couchdb"
+	"github.com/zhangwanbing1/fabric/core/ledger/kvledger/txmgmt/statedb"
+	"github.com/zhangwanbing1/fabric/core/ledger/ledgerconfig"
+	"github.com/zhangwanbing1/fabric/core/ledger/util/couchdb"
 	"github.com/pkg/errors"
 )
 

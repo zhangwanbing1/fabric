@@ -7,9 +7,9 @@ SPDX-License-Identifier: Apache-2.0
 package testutil
 
 import (
-	"github.com/hyperledger/fabric/core/ledger/pvtdatapolicy"
-	"github.com/hyperledger/fabric/core/ledger/pvtdatapolicy/mock"
-	"github.com/hyperledger/fabric/protos/common"
+	"github.com/zhangwanbing1/fabric/core/ledger/pvtdatapolicy"
+	"github.com/zhangwanbing1/fabric/core/ledger/pvtdatapolicy/mock"
+	"github.com/zhangwanbing1/fabric/protos/common"
 )
 
 // SampleBTLPolicy helps tests create a sample BTLPolicy

@@ -21,10 +21,10 @@ import (
 	"os"
 	"testing"
 
-	"github.com/hyperledger/fabric/core/common/ccpackage"
-	"github.com/hyperledger/fabric/protos/common"
-	pb "github.com/hyperledger/fabric/protos/peer"
-	"github.com/hyperledger/fabric/protos/utils"
+	"github.com/zhangwanbing1/fabric/core/common/ccpackage"
+	"github.com/zhangwanbing1/fabric/protos/common"
+	pb "github.com/zhangwanbing1/fabric/protos/peer"
+	"github.com/zhangwanbing1/fabric/protos/utils"
 	"github.com/stretchr/testify/assert"
 )
 
