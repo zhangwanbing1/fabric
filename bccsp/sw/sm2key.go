@@ -25,8 +25,8 @@ import (
 
 	"crypto/elliptic"
 
-	"github.com/hyperledger/fabric/bccsp"
-	"github.com/warm3snow/gmsm/sm2"
+	"github.com/zhangwanbing1/fabric/bccsp"
+	"github.com/zhangwanbing1/gmsm/sm2"
 )
 
 type sm2PrivateKey struct {

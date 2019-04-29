@@ -7,8 +7,8 @@ SPDX-License-Identifier: Apache-2.0
 package inactive
 
 import (
-	"github.com/hyperledger/fabric/orderer/consensus/migration"
-	"github.com/hyperledger/fabric/protos/common"
+	"github.com/zhangwanbing1/fabric/orderer/consensus/migration"
+	"github.com/zhangwanbing1/fabric/protos/common"
 )
 
 // Chain implements an inactive consenter.Chain

@@ -12,9 +12,9 @@ import (
 	"math"
 	"testing"
 
-	"github.com/hyperledger/fabric/core/chaincode"
-	"github.com/hyperledger/fabric/core/chaincode/mock"
-	"github.com/hyperledger/fabric/protos/ledger/queryresult"
+	"github.com/zhangwanbing1/fabric/core/chaincode"
+	"github.com/zhangwanbing1/fabric/core/chaincode/mock"
+	"github.com/zhangwanbing1/fabric/protos/ledger/queryresult"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -10,12 +10,12 @@ import (
 	"fmt"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/hyperledger/fabric-amcl/amcl/FP256BN"
-	"github.com/hyperledger/fabric/bccsp"
-	"github.com/hyperledger/fabric/bccsp/idemix/bridge"
-	"github.com/hyperledger/fabric/bccsp/idemix/handlers"
-	"github.com/hyperledger/fabric/bccsp/idemix/handlers/mock"
-	cryptolib "github.com/hyperledger/fabric/idemix"
+	"github.com/zhangwanbing1/fabric-amcl/amcl/FP256BN"
+	"github.com/zhangwanbing1/fabric/bccsp"
+	"github.com/zhangwanbing1/fabric/bccsp/idemix/bridge"
+	"github.com/zhangwanbing1/fabric/bccsp/idemix/handlers"
+	"github.com/zhangwanbing1/fabric/bccsp/idemix/handlers/mock"
+	cryptolib "github.com/zhangwanbing1/fabric/idemix"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )

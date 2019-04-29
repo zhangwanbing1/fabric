@@ -17,8 +17,8 @@ limitations under the License.
 package policies
 
 import (
-	"github.com/hyperledger/fabric/common/policies"
-	cb "github.com/hyperledger/fabric/protos/common"
+	"github.com/zhangwanbing1/fabric/common/policies"
+	cb "github.com/zhangwanbing1/fabric/protos/common"
 )
 
 // Policy is a mock implementation of the policies.Policy interface

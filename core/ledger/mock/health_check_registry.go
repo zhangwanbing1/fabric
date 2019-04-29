@@ -4,8 +4,8 @@ package mock
 import (
 	sync "sync"
 
-	healthz "github.com/hyperledger/fabric-lib-go/healthz"
-	ledger "github.com/hyperledger/fabric/core/ledger"
+	healthz "github.com/zhangwanbing1/fabric-lib-go/healthz"
+	ledger "github.com/zhangwanbing1/fabric/core/ledger"
 )
 
 type HealthCheckRegistry struct {

@@ -24,10 +24,10 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/hyperledger/fabric/bccsp"
-	"github.com/hyperledger/fabric/bccsp/utils"
-	"github.com/warm3snow/gmsm/sm2"
-	sm2Utils "github.com/warm3snow/gmsm/utils"
+	"github.com/zhangwanbing1/fabric/bccsp"
+	"github.com/zhangwanbing1/fabric/bccsp/utils"
+	"github.com/zhangwanbing1/gmsm/sm2"
+	sm2Utils "github.com/zhangwanbing1/gmsm/utils"
 )
 
 type sm2PKIXPublicKeyImportOptsKeyImporter struct{}

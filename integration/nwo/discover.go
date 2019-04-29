@@ -9,7 +9,7 @@ package nwo
 import (
 	"encoding/json"
 
-	"github.com/hyperledger/fabric/integration/nwo/commands"
+	"github.com/zhangwanbing1/fabric/integration/nwo/commands"
 	. "github.com/onsi/gomega"
 	"github.com/onsi/gomega/gexec"
 )

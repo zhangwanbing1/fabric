@@ -23,8 +23,8 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/hyperledger/fabric/bccsp"
-	"github.com/warm3snow/gmsm/sm2"
+	"github.com/zhangwanbing1/fabric/bccsp"
+	"github.com/zhangwanbing1/gmsm/sm2"
 )
 
 type ecdsaPublicKeyKeyDeriver struct{}

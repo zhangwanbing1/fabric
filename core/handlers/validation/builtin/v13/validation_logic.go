@@ -10,17 +10,17 @@ import (
 	"fmt"
 	"regexp"
 
-	commonerrors "github.com/hyperledger/fabric/common/errors"
-	"github.com/hyperledger/fabric/common/flogging"
-	"github.com/hyperledger/fabric/core/chaincode/platforms/ccmetadata"
-	. "github.com/hyperledger/fabric/core/common/validation/statebased"
-	. "github.com/hyperledger/fabric/core/handlers/validation/api/capabilities"
-	. "github.com/hyperledger/fabric/core/handlers/validation/api/identities"
-	. "github.com/hyperledger/fabric/core/handlers/validation/api/policies"
-	. "github.com/hyperledger/fabric/core/handlers/validation/api/state"
-	"github.com/hyperledger/fabric/protos/common"
-	"github.com/hyperledger/fabric/protos/peer"
-	"github.com/hyperledger/fabric/protos/utils"
+	commonerrors "github.com/zhangwanbing1/fabric/common/errors"
+	"github.com/zhangwanbing1/fabric/common/flogging"
+	"github.com/zhangwanbing1/fabric/core/chaincode/platforms/ccmetadata"
+	. "github.com/zhangwanbing1/fabric/core/common/validation/statebased"
+	. "github.com/zhangwanbing1/fabric/core/handlers/validation/api/capabilities"
+	. "github.com/zhangwanbing1/fabric/core/handlers/validation/api/identities"
+	. "github.com/zhangwanbing1/fabric/core/handlers/validation/api/policies"
+	. "github.com/zhangwanbing1/fabric/core/handlers/validation/api/state"
+	"github.com/zhangwanbing1/fabric/protos/common"
+	"github.com/zhangwanbing1/fabric/protos/peer"
+	"github.com/zhangwanbing1/fabric/protos/utils"
 )
 
 var logger = flogging.MustGetLogger("vscc")
