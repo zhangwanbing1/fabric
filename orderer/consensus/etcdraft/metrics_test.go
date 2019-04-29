@@ -7,8 +7,8 @@ SPDX-License-Identifier: Apache-2.0
 package etcdraft_test
 
 import (
-	"github.com/zhangwanbing1/fabric/common/metrics/metricsfakes"
-	"github.com/zhangwanbing1/fabric/orderer/consensus/etcdraft"
+	"github.com/hyperledger/fabric/common/metrics/metricsfakes"
+	"github.com/hyperledger/fabric/orderer/consensus/etcdraft"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )

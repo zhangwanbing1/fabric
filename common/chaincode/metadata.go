@@ -9,7 +9,7 @@ package chaincode
 import (
 	"sync"
 
-	"github.com/zhangwanbing1/fabric/protos/gossip"
+	"github.com/hyperledger/fabric/protos/gossip"
 )
 
 // InstalledChaincode defines metadata about an installed chaincode

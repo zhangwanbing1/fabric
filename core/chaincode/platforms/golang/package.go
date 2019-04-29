@@ -13,8 +13,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/zhangwanbing1/fabric/common/flogging"
-	ccutil "github.com/zhangwanbing1/fabric/core/chaincode/platforms/util"
+	"github.com/hyperledger/fabric/common/flogging"
+	ccutil "github.com/hyperledger/fabric/core/chaincode/platforms/util"
 )
 
 var includeFileTypes = map[string]bool{

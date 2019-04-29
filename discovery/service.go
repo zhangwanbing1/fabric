@@ -12,13 +12,13 @@ import (
 	"encoding/hex"
 	"fmt"
 
-	"github.com/zhangwanbing1/fabric/common/flogging"
-	"github.com/zhangwanbing1/fabric/common/util"
-	"github.com/zhangwanbing1/fabric/core/comm"
-	common2 "github.com/zhangwanbing1/fabric/gossip/common"
-	discovery2 "github.com/zhangwanbing1/fabric/gossip/discovery"
-	"github.com/zhangwanbing1/fabric/protos/common"
-	"github.com/zhangwanbing1/fabric/protos/discovery"
+	"github.com/hyperledger/fabric/common/flogging"
+	"github.com/hyperledger/fabric/common/util"
+	"github.com/hyperledger/fabric/core/comm"
+	common2 "github.com/hyperledger/fabric/gossip/common"
+	discovery2 "github.com/hyperledger/fabric/gossip/discovery"
+	"github.com/hyperledger/fabric/protos/common"
+	"github.com/hyperledger/fabric/protos/discovery"
 	"github.com/pkg/errors"
 )
 

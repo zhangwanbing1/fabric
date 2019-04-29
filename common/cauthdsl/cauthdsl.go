@@ -10,10 +10,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/zhangwanbing1/fabric/common/flogging"
-	"github.com/zhangwanbing1/fabric/msp"
-	cb "github.com/zhangwanbing1/fabric/protos/common"
-	mb "github.com/zhangwanbing1/fabric/protos/msp"
+	"github.com/hyperledger/fabric/common/flogging"
+	"github.com/hyperledger/fabric/msp"
+	cb "github.com/hyperledger/fabric/protos/common"
+	mb "github.com/hyperledger/fabric/protos/msp"
 	"go.uber.org/zap/zapcore"
 )
 

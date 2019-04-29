@@ -22,8 +22,8 @@ import (
 	"os"
 	"testing"
 
-	pb "github.com/zhangwanbing1/fabric/protos/peer"
-	"github.com/zhangwanbing1/fabric/protos/utils"
+	pb "github.com/hyperledger/fabric/protos/peer"
+	"github.com/hyperledger/fabric/protos/utils"
 	"github.com/stretchr/testify/assert"
 )
 

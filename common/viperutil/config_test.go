@@ -16,7 +16,7 @@ import (
 	"testing"
 
 	"github.com/Shopify/sarama"
-	"github.com/zhangwanbing1/fabric/orderer/mocks/util"
+	"github.com/hyperledger/fabric/orderer/mocks/util"
 	"github.com/spf13/viper"
 )
 

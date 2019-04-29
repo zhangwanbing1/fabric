@@ -12,8 +12,8 @@ import (
 	"sync"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/zhangwanbing1/fabric/protos/token"
-	"github.com/zhangwanbing1/fabric/token/tms"
+	"github.com/hyperledger/fabric/protos/token"
+	"github.com/hyperledger/fabric/token/tms"
 	"github.com/pkg/errors"
 )
 

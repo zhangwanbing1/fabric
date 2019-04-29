@@ -10,10 +10,10 @@ import (
 	"context"
 	"time"
 
-	"github.com/zhangwanbing1/fabric/common/crypto"
-	"github.com/zhangwanbing1/fabric/core/handlers/auth"
-	"github.com/zhangwanbing1/fabric/protos/peer"
-	"github.com/zhangwanbing1/fabric/protos/utils"
+	"github.com/hyperledger/fabric/common/crypto"
+	"github.com/hyperledger/fabric/core/handlers/auth"
+	"github.com/hyperledger/fabric/protos/peer"
+	"github.com/hyperledger/fabric/protos/utils"
 	"github.com/pkg/errors"
 )
 

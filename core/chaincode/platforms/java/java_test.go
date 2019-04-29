@@ -16,11 +16,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/zhangwanbing1/fabric/core/chaincode/platforms"
-	"github.com/zhangwanbing1/fabric/core/chaincode/platforms/java"
-	"github.com/zhangwanbing1/fabric/core/config/configtest"
-	"github.com/zhangwanbing1/fabric/core/container/util"
-	pb "github.com/zhangwanbing1/fabric/protos/peer"
+	"github.com/hyperledger/fabric/core/chaincode/platforms"
+	"github.com/hyperledger/fabric/core/chaincode/platforms/java"
+	"github.com/hyperledger/fabric/core/config/configtest"
+	"github.com/hyperledger/fabric/core/container/util"
+	pb "github.com/hyperledger/fabric/protos/peer"
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/assert"
 )

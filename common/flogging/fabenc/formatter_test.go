@@ -15,7 +15,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/zhangwanbing1/fabric/common/flogging/fabenc"
+	"github.com/hyperledger/fabric/common/flogging/fabenc"
 	"github.com/stretchr/testify/assert"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"

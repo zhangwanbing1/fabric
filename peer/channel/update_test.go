@@ -22,8 +22,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/zhangwanbing1/fabric/peer/common"
-	cb "github.com/zhangwanbing1/fabric/protos/common"
+	"github.com/hyperledger/fabric/peer/common"
+	cb "github.com/hyperledger/fabric/protos/common"
 	"github.com/stretchr/testify/assert"
 )
 

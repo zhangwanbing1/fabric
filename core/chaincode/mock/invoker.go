@@ -4,8 +4,8 @@ package mock
 import (
 	sync "sync"
 
-	ccprovider "github.com/zhangwanbing1/fabric/core/common/ccprovider"
-	peer "github.com/zhangwanbing1/fabric/protos/peer"
+	ccprovider "github.com/hyperledger/fabric/core/common/ccprovider"
+	peer "github.com/hyperledger/fabric/protos/peer"
 )
 
 type Invoker struct {

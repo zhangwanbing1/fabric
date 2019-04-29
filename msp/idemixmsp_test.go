@@ -10,8 +10,8 @@ import (
 	"testing"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/zhangwanbing1/fabric/idemix"
-	"github.com/zhangwanbing1/fabric/protos/msp"
+	"github.com/hyperledger/fabric/idemix"
+	"github.com/hyperledger/fabric/protos/msp"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
 )

@@ -4,9 +4,9 @@ package mock
 import (
 	"sync"
 
-	"github.com/zhangwanbing1/fabric/protos/common"
-	pb "github.com/zhangwanbing1/fabric/protos/peer"
-	"github.com/zhangwanbing1/fabric/token/client"
+	"github.com/hyperledger/fabric/protos/common"
+	pb "github.com/hyperledger/fabric/protos/peer"
+	"github.com/hyperledger/fabric/token/client"
 )
 
 type DeliverFiltered struct {

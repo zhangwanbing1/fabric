@@ -9,8 +9,8 @@ package config
 import (
 	"time"
 
-	"github.com/zhangwanbing1/fabric/common/channelconfig"
-	ab "github.com/zhangwanbing1/fabric/protos/orderer"
+	"github.com/hyperledger/fabric/common/channelconfig"
+	ab "github.com/hyperledger/fabric/protos/orderer"
 )
 
 // Orderer is a mock implementation of channelconfig.Orderer

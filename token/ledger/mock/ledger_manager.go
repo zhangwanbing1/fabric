@@ -4,7 +4,7 @@ package mock
 import (
 	"sync"
 
-	"github.com/zhangwanbing1/fabric/token/ledger"
+	"github.com/hyperledger/fabric/token/ledger"
 )
 
 type LedgerManager struct {

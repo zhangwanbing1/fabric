@@ -9,7 +9,7 @@ package comm
 import (
 	"context"
 
-	"github.com/zhangwanbing1/fabric/common/semaphore"
+	"github.com/hyperledger/fabric/common/semaphore"
 	"google.golang.org/grpc"
 )
 

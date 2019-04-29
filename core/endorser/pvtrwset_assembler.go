@@ -13,10 +13,10 @@ import (
 	"fmt"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/zhangwanbing1/fabric/core/common/privdata"
-	"github.com/zhangwanbing1/fabric/protos/common"
-	"github.com/zhangwanbing1/fabric/protos/ledger/rwset"
-	"github.com/zhangwanbing1/fabric/protos/transientstore"
+	"github.com/hyperledger/fabric/core/common/privdata"
+	"github.com/hyperledger/fabric/protos/common"
+	"github.com/hyperledger/fabric/protos/ledger/rwset"
+	"github.com/hyperledger/fabric/protos/transientstore"
 	"github.com/pkg/errors"
 )
 

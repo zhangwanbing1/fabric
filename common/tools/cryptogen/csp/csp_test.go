@@ -13,8 +13,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/zhangwanbing1/fabric/bccsp"
-	"github.com/zhangwanbing1/fabric/common/tools/cryptogen/csp"
+	"github.com/hyperledger/fabric/bccsp"
+	"github.com/hyperledger/fabric/common/tools/cryptogen/csp"
 	"github.com/stretchr/testify/assert"
 )
 

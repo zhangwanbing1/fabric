@@ -10,11 +10,11 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/zhangwanbing1/fabric/common/flogging"
-	mockchannelconfig "github.com/zhangwanbing1/fabric/common/mocks/config"
-	mockpolicies "github.com/zhangwanbing1/fabric/common/mocks/policies"
-	cb "github.com/zhangwanbing1/fabric/protos/common"
-	"github.com/zhangwanbing1/fabric/protos/utils"
+	"github.com/hyperledger/fabric/common/flogging"
+	mockchannelconfig "github.com/hyperledger/fabric/common/mocks/config"
+	mockpolicies "github.com/hyperledger/fabric/common/mocks/policies"
+	cb "github.com/hyperledger/fabric/protos/common"
+	"github.com/hyperledger/fabric/protos/utils"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
 )

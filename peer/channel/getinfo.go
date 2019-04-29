@@ -12,11 +12,11 @@ import (
 	"fmt"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/zhangwanbing1/fabric/core/scc/qscc"
-	"github.com/zhangwanbing1/fabric/peer/common"
-	cb "github.com/zhangwanbing1/fabric/protos/common"
-	pb "github.com/zhangwanbing1/fabric/protos/peer"
-	"github.com/zhangwanbing1/fabric/protos/utils"
+	"github.com/hyperledger/fabric/core/scc/qscc"
+	"github.com/hyperledger/fabric/peer/common"
+	cb "github.com/hyperledger/fabric/protos/common"
+	pb "github.com/hyperledger/fabric/protos/peer"
+	"github.com/hyperledger/fabric/protos/utils"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
 )

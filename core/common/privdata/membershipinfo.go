@@ -7,8 +7,8 @@ SPDX-License-Identifier: Apache-2.0
 package privdata
 
 import (
-	"github.com/zhangwanbing1/fabric/msp"
-	"github.com/zhangwanbing1/fabric/protos/common"
+	"github.com/hyperledger/fabric/msp"
+	"github.com/hyperledger/fabric/protos/common"
 )
 
 // MembershipProvider can be used to check whether a peer is eligible to a collection or not

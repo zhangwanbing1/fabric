@@ -9,7 +9,7 @@ package inquire
 import (
 	"reflect"
 
-	"github.com/zhangwanbing1/fabric/common/policies"
+	"github.com/hyperledger/fabric/common/policies"
 )
 
 // ComparablePrincipalSets aggregate ComparablePrincipalSets

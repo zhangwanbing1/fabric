@@ -10,9 +10,9 @@ import (
 	"fmt"
 
 	"github.com/golang/protobuf/proto"
-	newchannelconfig "github.com/zhangwanbing1/fabric/common/channelconfig"
-	cb "github.com/zhangwanbing1/fabric/protos/common"
-	mspprotos "github.com/zhangwanbing1/fabric/protos/msp"
+	newchannelconfig "github.com/hyperledger/fabric/common/channelconfig"
+	cb "github.com/hyperledger/fabric/protos/common"
+	mspprotos "github.com/hyperledger/fabric/protos/msp"
 )
 
 type Messages struct {

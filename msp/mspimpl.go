@@ -15,11 +15,11 @@ import (
 	"fmt"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/zhangwanbing1/fabric/bccsp"
-	"github.com/zhangwanbing1/fabric/bccsp/factory"
-	"github.com/zhangwanbing1/fabric/bccsp/signer"
+	"github.com/hyperledger/fabric/bccsp"
+	"github.com/hyperledger/fabric/bccsp/factory"
+	"github.com/hyperledger/fabric/bccsp/signer"
 	cspx509 "github.com/zhangwanbing1/fabric/bccsp/x509"
-	m "github.com/zhangwanbing1/fabric/protos/msp"
+	m "github.com/hyperledger/fabric/protos/msp"
 	"github.com/pkg/errors"
 )
 

@@ -8,9 +8,9 @@ package handlers_test
 import (
 	"errors"
 
-	"github.com/zhangwanbing1/fabric/bccsp"
-	"github.com/zhangwanbing1/fabric/bccsp/idemix/handlers"
-	"github.com/zhangwanbing1/fabric/bccsp/idemix/handlers/mock"
+	"github.com/hyperledger/fabric/bccsp"
+	"github.com/hyperledger/fabric/bccsp/idemix/handlers"
+	"github.com/hyperledger/fabric/bccsp/idemix/handlers/mock"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )

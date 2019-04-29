@@ -9,16 +9,16 @@ package endorsement
 import (
 	"fmt"
 
-	"github.com/zhangwanbing1/fabric/common/chaincode"
-	"github.com/zhangwanbing1/fabric/common/flogging"
-	"github.com/zhangwanbing1/fabric/common/graph"
-	"github.com/zhangwanbing1/fabric/common/policies"
-	"github.com/zhangwanbing1/fabric/common/policies/inquire"
-	"github.com/zhangwanbing1/fabric/gossip/api"
-	"github.com/zhangwanbing1/fabric/gossip/common"
-	. "github.com/zhangwanbing1/fabric/gossip/discovery"
-	"github.com/zhangwanbing1/fabric/protos/discovery"
-	"github.com/zhangwanbing1/fabric/protos/msp"
+	"github.com/hyperledger/fabric/common/chaincode"
+	"github.com/hyperledger/fabric/common/flogging"
+	"github.com/hyperledger/fabric/common/graph"
+	"github.com/hyperledger/fabric/common/policies"
+	"github.com/hyperledger/fabric/common/policies/inquire"
+	"github.com/hyperledger/fabric/gossip/api"
+	"github.com/hyperledger/fabric/gossip/common"
+	. "github.com/hyperledger/fabric/gossip/discovery"
+	"github.com/hyperledger/fabric/protos/discovery"
+	"github.com/hyperledger/fabric/protos/msp"
 	"github.com/pkg/errors"
 )
 

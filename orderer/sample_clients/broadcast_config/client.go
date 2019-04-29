@@ -9,11 +9,11 @@ import (
 	"fmt"
 	"os"
 
-	genesisconfig "github.com/zhangwanbing1/fabric/common/tools/configtxgen/localconfig"
-	mspmgmt "github.com/zhangwanbing1/fabric/msp/mgmt"
-	"github.com/zhangwanbing1/fabric/orderer/common/localconfig"
-	cb "github.com/zhangwanbing1/fabric/protos/common"
-	ab "github.com/zhangwanbing1/fabric/protos/orderer"
+	genesisconfig "github.com/hyperledger/fabric/common/tools/configtxgen/localconfig"
+	mspmgmt "github.com/hyperledger/fabric/msp/mgmt"
+	"github.com/hyperledger/fabric/orderer/common/localconfig"
+	cb "github.com/hyperledger/fabric/protos/common"
+	ab "github.com/hyperledger/fabric/protos/orderer"
 	"google.golang.org/grpc"
 )
 

@@ -19,7 +19,7 @@ package shim
 import (
 	"fmt"
 
-	pb "github.com/zhangwanbing1/fabric/protos/peer"
+	pb "github.com/hyperledger/fabric/protos/peer"
 	"github.com/pkg/errors"
 )
 

@@ -21,7 +21,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/zhangwanbing1/gmsm/sm2"
+	"github.com/hyperledger/gmsm/sm2"
 )
 
 //"fmt"

@@ -9,9 +9,9 @@ import (
 	"crypto/ecdsa"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/zhangwanbing1/fabric-amcl/amcl/FP256BN"
-	"github.com/zhangwanbing1/fabric/bccsp"
-	cryptolib "github.com/zhangwanbing1/fabric/idemix"
+	"github.com/hyperledger/fabric-amcl/amcl/FP256BN"
+	"github.com/hyperledger/fabric/bccsp"
+	cryptolib "github.com/hyperledger/fabric/idemix"
 	"github.com/pkg/errors"
 )
 

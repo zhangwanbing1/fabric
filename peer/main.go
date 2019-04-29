@@ -11,12 +11,12 @@ import (
 	"os"
 	"strings"
 
-	"github.com/zhangwanbing1/fabric/peer/chaincode"
-	"github.com/zhangwanbing1/fabric/peer/channel"
-	"github.com/zhangwanbing1/fabric/peer/clilogging"
-	"github.com/zhangwanbing1/fabric/peer/common"
-	"github.com/zhangwanbing1/fabric/peer/node"
-	"github.com/zhangwanbing1/fabric/peer/version"
+	"github.com/hyperledger/fabric/peer/chaincode"
+	"github.com/hyperledger/fabric/peer/channel"
+	"github.com/hyperledger/fabric/peer/clilogging"
+	"github.com/hyperledger/fabric/peer/common"
+	"github.com/hyperledger/fabric/peer/node"
+	"github.com/hyperledger/fabric/peer/version"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )

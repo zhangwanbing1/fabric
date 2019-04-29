@@ -11,13 +11,13 @@ import (
 	"encoding/hex"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/zhangwanbing1/fabric/bccsp"
-	"github.com/zhangwanbing1/fabric/bccsp/factory"
-	"github.com/zhangwanbing1/fabric/common/crypto"
-	"github.com/zhangwanbing1/fabric/common/util"
-	"github.com/zhangwanbing1/fabric/core/chaincode/platforms"
-	"github.com/zhangwanbing1/fabric/protos/common"
-	"github.com/zhangwanbing1/fabric/protos/peer"
+	"github.com/hyperledger/fabric/bccsp"
+	"github.com/hyperledger/fabric/bccsp/factory"
+	"github.com/hyperledger/fabric/common/crypto"
+	"github.com/hyperledger/fabric/common/util"
+	"github.com/hyperledger/fabric/core/chaincode/platforms"
+	"github.com/hyperledger/fabric/protos/common"
+	"github.com/hyperledger/fabric/protos/peer"
 	"github.com/pkg/errors"
 )
 

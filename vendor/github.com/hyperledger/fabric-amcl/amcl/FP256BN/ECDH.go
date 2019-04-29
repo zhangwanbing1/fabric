@@ -22,7 +22,7 @@ under the License.
 package FP256BN
 
 
-import "github.com/zhangwanbing1/fabric-amcl/amcl"
+import "github.com/hyperledger/fabric-amcl/amcl"
 
 const INVALID_PUBLIC_KEY int=-2
 const ERROR int=-3

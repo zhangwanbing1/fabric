@@ -4,7 +4,7 @@ package mock
 import (
 	"sync"
 
-	"github.com/zhangwanbing1/fabric/bccsp/idemix/handlers"
+	"github.com/hyperledger/fabric/bccsp/idemix/handlers"
 )
 
 type IssuerSecretKey struct {

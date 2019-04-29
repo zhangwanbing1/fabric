@@ -12,11 +12,11 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/zhangwanbing1/fabric/cmd/common"
-	"github.com/zhangwanbing1/fabric/cmd/common/comm"
-	"github.com/zhangwanbing1/fabric/cmd/common/signer"
-	c "github.com/zhangwanbing1/fabric/core/comm"
-	"github.com/zhangwanbing1/fabric/discovery/client"
+	"github.com/hyperledger/fabric/cmd/common"
+	"github.com/hyperledger/fabric/cmd/common/comm"
+	"github.com/hyperledger/fabric/cmd/common/signer"
+	c "github.com/hyperledger/fabric/core/comm"
+	"github.com/hyperledger/fabric/discovery/client"
 	"github.com/stretchr/testify/assert"
 )
 

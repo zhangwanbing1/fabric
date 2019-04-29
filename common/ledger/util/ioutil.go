@@ -13,7 +13,7 @@ import (
 	"path"
 	"strings"
 
-	"github.com/zhangwanbing1/fabric/common/flogging"
+	"github.com/hyperledger/fabric/common/flogging"
 	"github.com/pkg/errors"
 )
 

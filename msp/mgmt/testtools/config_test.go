@@ -9,8 +9,8 @@ package msptesttools
 import (
 	"testing"
 
-	"github.com/zhangwanbing1/fabric/common/util"
-	"github.com/zhangwanbing1/fabric/msp/mgmt"
+	"github.com/hyperledger/fabric/common/util"
+	"github.com/hyperledger/fabric/msp/mgmt"
 )
 
 func TestFakeSetup(t *testing.T) {

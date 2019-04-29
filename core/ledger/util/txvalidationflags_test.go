@@ -9,7 +9,7 @@ package util
 import (
 	"testing"
 
-	"github.com/zhangwanbing1/fabric/protos/peer"
+	"github.com/hyperledger/fabric/protos/peer"
 	"github.com/stretchr/testify/assert"
 )
 

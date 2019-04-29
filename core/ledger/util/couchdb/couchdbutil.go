@@ -15,8 +15,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/zhangwanbing1/fabric/common/metrics"
-	"github.com/zhangwanbing1/fabric/common/util"
+	"github.com/hyperledger/fabric/common/metrics"
+	"github.com/hyperledger/fabric/common/util"
 	"github.com/pkg/errors"
 )
 

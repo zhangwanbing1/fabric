@@ -12,9 +12,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/zhangwanbing1/fabric/common/viperutil"
-	"github.com/zhangwanbing1/fabric/core/handlers/library"
-	"github.com/zhangwanbing1/fabric/msp/mgmt/testtools"
+	"github.com/hyperledger/fabric/common/viperutil"
+	"github.com/hyperledger/fabric/core/handlers/library"
+	"github.com/hyperledger/fabric/msp/mgmt/testtools"
 	. "github.com/onsi/gomega"
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/assert"

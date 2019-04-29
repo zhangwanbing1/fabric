@@ -11,14 +11,14 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/zhangwanbing1/fabric/common/policies"
-	"github.com/zhangwanbing1/fabric/gossip/api"
-	gcommon "github.com/zhangwanbing1/fabric/gossip/common"
-	disc "github.com/zhangwanbing1/fabric/gossip/discovery"
-	"github.com/zhangwanbing1/fabric/protos/common"
-	"github.com/zhangwanbing1/fabric/protos/discovery"
-	"github.com/zhangwanbing1/fabric/protos/msp"
-	"github.com/zhangwanbing1/fabric/protos/utils"
+	"github.com/hyperledger/fabric/common/policies"
+	"github.com/hyperledger/fabric/gossip/api"
+	gcommon "github.com/hyperledger/fabric/gossip/common"
+	disc "github.com/hyperledger/fabric/gossip/discovery"
+	"github.com/hyperledger/fabric/protos/common"
+	"github.com/hyperledger/fabric/protos/discovery"
+	"github.com/hyperledger/fabric/protos/msp"
+	"github.com/hyperledger/fabric/protos/utils"
 	"github.com/stretchr/testify/assert"
 )
 

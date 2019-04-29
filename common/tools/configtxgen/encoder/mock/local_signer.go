@@ -4,7 +4,7 @@ package mock
 import (
 	"sync"
 
-	cb "github.com/zhangwanbing1/fabric/protos/common"
+	cb "github.com/hyperledger/fabric/protos/common"
 )
 
 type LocalSigner struct {

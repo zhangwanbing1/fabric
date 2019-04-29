@@ -23,7 +23,7 @@ import (
 	"crypto/rsa"
 	"fmt"
 
-	"github.com/zhangwanbing1/fabric/bccsp"
+	"github.com/hyperledger/fabric/bccsp"
 	"github.com/zhangwanbing1/gmsm/sm2"
 )
 

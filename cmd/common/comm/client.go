@@ -9,9 +9,9 @@ package comm
 import (
 	"time"
 
-	"github.com/zhangwanbing1/fabric/common/crypto/tlsgen"
-	"github.com/zhangwanbing1/fabric/common/util"
-	"github.com/zhangwanbing1/fabric/core/comm"
+	"github.com/hyperledger/fabric/common/crypto/tlsgen"
+	"github.com/hyperledger/fabric/common/util"
+	"github.com/hyperledger/fabric/core/comm"
 	"github.com/pkg/errors"
 	"google.golang.org/grpc"
 )

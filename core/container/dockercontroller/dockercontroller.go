@@ -21,12 +21,12 @@ import (
 	"time"
 
 	docker "github.com/fsouza/go-dockerclient"
-	"github.com/zhangwanbing1/fabric/common/flogging"
-	"github.com/zhangwanbing1/fabric/common/metrics"
-	"github.com/zhangwanbing1/fabric/common/util"
-	"github.com/zhangwanbing1/fabric/core/container"
-	"github.com/zhangwanbing1/fabric/core/container/ccintf"
-	cutil "github.com/zhangwanbing1/fabric/core/container/util"
+	"github.com/hyperledger/fabric/common/flogging"
+	"github.com/hyperledger/fabric/common/metrics"
+	"github.com/hyperledger/fabric/common/util"
+	"github.com/hyperledger/fabric/core/container"
+	"github.com/hyperledger/fabric/core/container/ccintf"
+	cutil "github.com/hyperledger/fabric/core/container/util"
 	"github.com/pkg/errors"
 	"github.com/spf13/viper"
 )

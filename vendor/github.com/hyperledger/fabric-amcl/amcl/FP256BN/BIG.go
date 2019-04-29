@@ -22,7 +22,7 @@ under the License.
 package FP256BN
 
 import "strconv"
-import "github.com/zhangwanbing1/fabric-amcl/amcl"
+import "github.com/hyperledger/fabric-amcl/amcl"
 
 
 

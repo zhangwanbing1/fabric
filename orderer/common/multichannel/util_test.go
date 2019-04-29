@@ -9,15 +9,15 @@ package multichannel
 import (
 	"fmt"
 
-	"github.com/zhangwanbing1/fabric/common/channelconfig"
-	"github.com/zhangwanbing1/fabric/common/configtx"
-	genesisconfig "github.com/zhangwanbing1/fabric/common/tools/configtxgen/localconfig"
-	"github.com/zhangwanbing1/fabric/orderer/common/blockcutter"
-	"github.com/zhangwanbing1/fabric/orderer/common/msgprocessor"
-	"github.com/zhangwanbing1/fabric/orderer/consensus"
-	"github.com/zhangwanbing1/fabric/orderer/consensus/migration"
-	cb "github.com/zhangwanbing1/fabric/protos/common"
-	"github.com/zhangwanbing1/fabric/protos/utils"
+	"github.com/hyperledger/fabric/common/channelconfig"
+	"github.com/hyperledger/fabric/common/configtx"
+	genesisconfig "github.com/hyperledger/fabric/common/tools/configtxgen/localconfig"
+	"github.com/hyperledger/fabric/orderer/common/blockcutter"
+	"github.com/hyperledger/fabric/orderer/common/msgprocessor"
+	"github.com/hyperledger/fabric/orderer/consensus"
+	"github.com/hyperledger/fabric/orderer/consensus/migration"
+	cb "github.com/hyperledger/fabric/protos/common"
+	"github.com/hyperledger/fabric/protos/utils"
 )
 
 type mockConsenter struct {

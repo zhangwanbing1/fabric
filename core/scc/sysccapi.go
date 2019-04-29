@@ -10,14 +10,14 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/zhangwanbing1/fabric/common/flogging"
-	"github.com/zhangwanbing1/fabric/common/util"
-	"github.com/zhangwanbing1/fabric/core/chaincode/shim"
-	"github.com/zhangwanbing1/fabric/core/common/ccprovider"
-	"github.com/zhangwanbing1/fabric/core/container/ccintf"
-	"github.com/zhangwanbing1/fabric/core/container/inproccontroller"
-	"github.com/zhangwanbing1/fabric/core/peer"
-	pb "github.com/zhangwanbing1/fabric/protos/peer"
+	"github.com/hyperledger/fabric/common/flogging"
+	"github.com/hyperledger/fabric/common/util"
+	"github.com/hyperledger/fabric/core/chaincode/shim"
+	"github.com/hyperledger/fabric/core/common/ccprovider"
+	"github.com/hyperledger/fabric/core/container/ccintf"
+	"github.com/hyperledger/fabric/core/container/inproccontroller"
+	"github.com/hyperledger/fabric/core/peer"
+	pb "github.com/hyperledger/fabric/protos/peer"
 	"github.com/spf13/viper"
 )
 

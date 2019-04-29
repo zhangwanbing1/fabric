@@ -12,7 +12,7 @@ import (
 	"github.com/zhangwanbing1/gmsm/sm2"
 	"reflect"
 
-	"github.com/zhangwanbing1/fabric/bccsp"
+	"github.com/hyperledger/fabric/bccsp"
 	"github.com/pkg/errors"
 	"golang.org/x/crypto/sha3"
 )

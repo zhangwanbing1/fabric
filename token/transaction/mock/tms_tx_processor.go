@@ -4,10 +4,10 @@ package mock
 import (
 	"sync"
 
-	"github.com/zhangwanbing1/fabric/protos/token"
-	"github.com/zhangwanbing1/fabric/token/identity"
-	"github.com/zhangwanbing1/fabric/token/ledger"
-	"github.com/zhangwanbing1/fabric/token/transaction"
+	"github.com/hyperledger/fabric/protos/token"
+	"github.com/hyperledger/fabric/token/identity"
+	"github.com/hyperledger/fabric/token/ledger"
+	"github.com/hyperledger/fabric/token/transaction"
 )
 
 type TMSTxProcessor struct {

@@ -7,7 +7,7 @@ SPDX-License-Identifier: Apache-2.0
 package configtx
 
 import (
-	cb "github.com/zhangwanbing1/fabric/protos/common"
+	cb "github.com/hyperledger/fabric/protos/common"
 )
 
 // Validator is a mock implementation of configtx.Validator

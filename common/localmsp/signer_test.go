@@ -10,9 +10,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/zhangwanbing1/fabric/common/crypto"
-	mspmgmt "github.com/zhangwanbing1/fabric/msp/mgmt"
-	msptesttools "github.com/zhangwanbing1/fabric/msp/mgmt/testtools"
+	"github.com/hyperledger/fabric/common/crypto"
+	mspmgmt "github.com/hyperledger/fabric/msp/mgmt"
+	msptesttools "github.com/hyperledger/fabric/msp/mgmt/testtools"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -12,12 +12,12 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/zhangwanbing1/fabric/core/chaincode/accesscontrol"
-	"github.com/zhangwanbing1/fabric/core/chaincode/platforms"
-	"github.com/zhangwanbing1/fabric/core/common/ccprovider"
-	"github.com/zhangwanbing1/fabric/core/container"
-	"github.com/zhangwanbing1/fabric/core/container/ccintf"
-	pb "github.com/zhangwanbing1/fabric/protos/peer"
+	"github.com/hyperledger/fabric/core/chaincode/accesscontrol"
+	"github.com/hyperledger/fabric/core/chaincode/platforms"
+	"github.com/hyperledger/fabric/core/common/ccprovider"
+	"github.com/hyperledger/fabric/core/container"
+	"github.com/hyperledger/fabric/core/container/ccintf"
+	pb "github.com/hyperledger/fabric/protos/peer"
 	"github.com/pkg/errors"
 )
 

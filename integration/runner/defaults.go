@@ -9,7 +9,7 @@ package runner
 import (
 	"time"
 
-	"github.com/zhangwanbing1/fabric/integration/helpers"
+	"github.com/hyperledger/fabric/integration/helpers"
 )
 
 const DefaultStartTimeout = 30 * time.Second

@@ -11,12 +11,12 @@ import (
 	"sync/atomic"
 
 	"github.com/golang/protobuf/proto"
-	gossip_common "github.com/zhangwanbing1/fabric/gossip/common"
-	"github.com/zhangwanbing1/fabric/gossip/discovery"
-	"github.com/zhangwanbing1/fabric/protos/common"
-	gossip_proto "github.com/zhangwanbing1/fabric/protos/gossip"
-	"github.com/zhangwanbing1/fabric/protos/orderer"
-	"github.com/zhangwanbing1/fabric/protos/utils"
+	gossip_common "github.com/hyperledger/fabric/gossip/common"
+	"github.com/hyperledger/fabric/gossip/discovery"
+	"github.com/hyperledger/fabric/protos/common"
+	gossip_proto "github.com/hyperledger/fabric/protos/gossip"
+	"github.com/hyperledger/fabric/protos/orderer"
+	"github.com/hyperledger/fabric/protos/utils"
 	"google.golang.org/grpc"
 )
 

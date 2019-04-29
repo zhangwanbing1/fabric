@@ -9,7 +9,7 @@ package kafka_test
 import (
 	"testing"
 
-	"github.com/zhangwanbing1/fabric/common/metrics"
+	"github.com/hyperledger/fabric/common/metrics"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

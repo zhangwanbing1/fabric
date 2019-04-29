@@ -8,12 +8,12 @@ package kafka
 
 import (
 	"github.com/Shopify/sarama"
-	"github.com/zhangwanbing1/fabric-lib-go/healthz"
-	"github.com/zhangwanbing1/fabric/common/metrics"
-	"github.com/zhangwanbing1/fabric/orderer/common/localconfig"
-	"github.com/zhangwanbing1/fabric/orderer/consensus"
-	"github.com/zhangwanbing1/fabric/orderer/consensus/migration"
-	cb "github.com/zhangwanbing1/fabric/protos/common"
+	"github.com/hyperledger/fabric-lib-go/healthz"
+	"github.com/hyperledger/fabric/common/metrics"
+	"github.com/hyperledger/fabric/orderer/common/localconfig"
+	"github.com/hyperledger/fabric/orderer/consensus"
+	"github.com/hyperledger/fabric/orderer/consensus/migration"
+	cb "github.com/hyperledger/fabric/protos/common"
 	"github.com/op/go-logging"
 )
 

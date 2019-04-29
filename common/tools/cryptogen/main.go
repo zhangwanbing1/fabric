@@ -14,11 +14,13 @@ import (
 	"path/filepath"
 	"text/template"
 
-	"github.com/zhangwanbing1/fabric/common/tools/cryptogen/ca"
-	"github.com/zhangwanbing1/fabric/common/tools/cryptogen/csp"
-	"github.com/zhangwanbing1/fabric/common/tools/cryptogen/metadata"
-	"github.com/zhangwanbing1/fabric/common/tools/cryptogen/msp"
-	"github.com/zhangwanbing1/fabric/common/tools/cryptogenCN"
+	"github.com/hyperledger/fabric/common/tools/cryptogen/ca"
+	"github.com/hyperledger/fabric/common/tools/cryptogen/csp"
+	"github.com/hyperledger/fabric/common/tools/cryptogen/metadata"
+	"github.com/hyperledger/fabric/common/tools/cryptogen/msp"
+	"github.com/hyperledger/fabric/common/tools/cryptogenCN"
+	"gopkg.in/alecthomas/kingpin.v2"
+	"gopkg.in/yaml.v2"
 )
 
 const (

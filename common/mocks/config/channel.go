@@ -17,9 +17,9 @@ limitations under the License.
 package config
 
 import (
-	"github.com/zhangwanbing1/fabric/common/channelconfig"
-	"github.com/zhangwanbing1/fabric/common/util"
-	"github.com/zhangwanbing1/fabric/msp"
+	"github.com/hyperledger/fabric/common/channelconfig"
+	"github.com/hyperledger/fabric/common/util"
+	"github.com/hyperledger/fabric/msp"
 )
 
 func nearIdentityHash(input []byte) []byte {

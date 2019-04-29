@@ -11,9 +11,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/zhangwanbing1/fabric/gossip/metrics"
-	"github.com/zhangwanbing1/fabric/gossip/metrics/mocks"
-	"github.com/zhangwanbing1/fabric/gossip/util"
+	"github.com/hyperledger/fabric/gossip/metrics"
+	"github.com/hyperledger/fabric/gossip/metrics/mocks"
+	"github.com/hyperledger/fabric/gossip/util"
 	"github.com/stretchr/testify/assert"
 )
 

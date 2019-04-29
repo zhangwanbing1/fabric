@@ -21,7 +21,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/zhangwanbing1/fabric/bccsp/pkcs11"
+	"github.com/hyperledger/fabric/bccsp/pkcs11"
 	"github.com/stretchr/testify/assert"
 )
 

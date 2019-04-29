@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/zhangwanbing1/fabric/common/util"
+	"github.com/hyperledger/fabric/common/util"
 )
 
 // NewBlock construct a block with no data and no metadata.

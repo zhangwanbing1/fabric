@@ -9,7 +9,7 @@ package api
 import (
 	"time"
 
-	"github.com/zhangwanbing1/fabric/gossip/common"
+	"github.com/hyperledger/fabric/gossip/common"
 	"google.golang.org/grpc"
 )
 

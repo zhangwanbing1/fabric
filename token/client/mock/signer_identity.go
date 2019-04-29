@@ -4,7 +4,7 @@ package mock
 import (
 	"sync"
 
-	"github.com/zhangwanbing1/fabric/token/client"
+	"github.com/hyperledger/fabric/token/client"
 )
 
 type SignerIdentity struct {

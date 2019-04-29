@@ -8,7 +8,7 @@ package common_test
 import (
 	"testing"
 
-	"github.com/zhangwanbing1/fabric/peer/common"
+	"github.com/hyperledger/fabric/peer/common"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/assert"

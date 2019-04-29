@@ -9,8 +9,8 @@ package etcdraft
 import (
 	"testing"
 
-	"github.com/zhangwanbing1/fabric/common/flogging"
-	cb "github.com/zhangwanbing1/fabric/protos/common"
+	"github.com/hyperledger/fabric/common/flogging"
+	cb "github.com/hyperledger/fabric/protos/common"
 	"github.com/stretchr/testify/assert"
 	"go.uber.org/zap"
 )

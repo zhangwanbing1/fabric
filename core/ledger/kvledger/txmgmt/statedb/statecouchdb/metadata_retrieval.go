@@ -8,8 +8,8 @@ package statecouchdb
 import (
 	"fmt"
 
-	"github.com/zhangwanbing1/fabric/core/ledger/ledgerconfig"
-	"github.com/zhangwanbing1/fabric/core/ledger/util/couchdb"
+	"github.com/hyperledger/fabric/core/ledger/ledgerconfig"
+	"github.com/hyperledger/fabric/core/ledger/util/couchdb"
 )
 
 // nsMetadataRetriever implements `batch` interface and wraps the function `retrieveNsMetadata`

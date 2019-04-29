@@ -12,7 +12,7 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/zhangwanbing1/fabric/integration/nwo"
+	"github.com/hyperledger/fabric/integration/nwo"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )
