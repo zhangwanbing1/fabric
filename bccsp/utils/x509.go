@@ -19,7 +19,7 @@ package utils
 import (
 	"crypto/x509"
 
-	"github.com/zhangwanbing1/gmsm/sm2"
+	"github.com/hyperledger/gmsm/sm2"
 )
 
 // DERToX509Certificate converts der to x509

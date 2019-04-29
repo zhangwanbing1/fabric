@@ -23,7 +23,7 @@ import (
 	"github.com/hyperledger/fabric/bccsp"
 	"github.com/hyperledger/fabric/common/flogging"
 	"github.com/pkg/errors"
-	"github.com/zhangwanbing1/gmsm/sm2"
+	"github.com/hyperledger/gmsm/sm2"
 )
 
 var (

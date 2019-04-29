@@ -18,7 +18,7 @@ import (
 	"reflect"
 
 	"github.com/pkg/errors"
-	cspx509 "github.com/zhangwanbing1/fabric/bccsp/x509"
+	cspx509 "github.com/hyperledger/fabric/bccsp/x509"
 )
 
 func (msp *bccspmsp) validateIdentity(id *identity) error {

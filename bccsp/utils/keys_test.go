@@ -28,7 +28,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/zhangwanbing1/gmsm/sm2"
+	"github.com/hyperledger/gmsm/sm2"
 )
 
 func TestOidFromNamedCurve(t *testing.T) {

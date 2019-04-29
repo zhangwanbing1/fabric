@@ -9,7 +9,7 @@ import (
 	"crypto/elliptic"
 	"crypto/sha256"
 	"crypto/sha512"
-	"github.com/zhangwanbing1/gmsm/sm2"
+	"github.com/hyperledger/gmsm/sm2"
 	"reflect"
 
 	"github.com/hyperledger/fabric/bccsp"

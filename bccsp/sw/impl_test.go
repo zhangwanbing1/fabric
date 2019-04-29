@@ -43,8 +43,8 @@ import (
 	"github.com/hyperledger/fabric/bccsp/utils"
 	"github.com/stretchr/testify/assert"
 	"golang.org/x/crypto/sha3"
-	"github.com/zhangwanbing1/gmsm/sm2"
-	sm2Utils "github.com/zhangwanbing1/gmsm/utils"
+	"github.com/hyperledger/gmsm/sm2"
+	sm2Utils "github.com/hyperledger/gmsm/utils"
 )
 
 var (

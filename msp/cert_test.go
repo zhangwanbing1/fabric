@@ -29,7 +29,7 @@ import (
 	"time"
 
 	"github.com/hyperledger/fabric/bccsp/utils"
-	cspx509 "github.com/zhangwanbing1/fabric/bccsp/x509"
+	cspx509 "github.com/hyperledger/fabric/bccsp/x509"
 	"github.com/stretchr/testify/assert"
 )
 

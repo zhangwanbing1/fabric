@@ -28,9 +28,9 @@ import (
 	"fmt"
 	"strings"
 
-	cspx509 "github.com/zhangwanbing1/fabric/bccsp/x509"
+	cspx509 "github.com/hyperledger/fabric/bccsp/x509"
 	"github.com/op/go-logging"
-	"github.com/zhangwanbing1/gmsm/sm2"
+	"github.com/hyperledger/gmsm/sm2"
 )
 
 var logger = logging.MustGetLogger("bccsp_utils")
