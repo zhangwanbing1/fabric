@@ -29,7 +29,7 @@ import (
 	"time"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/hyperledger/gmsm/sm2"
+	"github.com/warm3snow/gmsm/sm2"
 )
 
 func TestDERToX509Certificate(t *testing.T) {

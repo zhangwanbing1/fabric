@@ -25,7 +25,7 @@ import (
 	mocks2 "github.com/hyperledger/fabric/bccsp/mocks"
 	"github.com/hyperledger/fabric/bccsp/sw/mocks"
 	"github.com/stretchr/testify/assert"
-	"github.com/hyperledger/gmsm/sm2"
+	"github.com/warm3snow/gmsm/sm2"
 )
 
 func TestKeyGen(t *testing.T) {
