@@ -24,6 +24,7 @@ import (
 
 	"github.com/hyperledger/fabric/bccsp"
 	"github.com/warm3snow/gmsm/sm2"
+	"github.com/hyperledger/fabric/bccsp/utils"
 )
 
 type SM2Signature struct {
@@ -146,8 +147,8 @@ func SM2SignatureToLowS(k *sm2.PublicKey, signature []byte) ([]byte, error) {
 
 // IsLow checks that s is a low-S
 func SM2IsLowS(k *sm2.PublicKey, s *big.Int) (bool, error) {
-	halfOrder, ok := curveHalfOrders[k.Curve]
-	if !ok {
+	halfOrder := utils.GetCurveHalfOrdersAt(k.Curve)
+	if nil == halfOrder {
 		return false, fmt.Errorf("Curve not recognized [%s]", k.Curve)
 	}
 

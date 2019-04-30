@@ -217,7 +217,7 @@ func (ki *x509PublicKeyImportOptsKeyImporter) KeyImport(raw interface{}, opts bc
 				tmpK, _ := sm2.GenerateKey()
 				sm2pk := &tmpK.PublicKey
 				sm2pk.X, sm2pk.Y = pk.(*ecdsa.PublicKey).X, pk.(*ecdsa.PublicKey).Y
-				return ki.bccsp.keyImporters[reflect.TypeOf(&bccsp.SM2GoPublicKeyImportOpts{})].KeyImport(
+				return ki.bccsp.KeyImporters[reflect.TypeOf(&bccsp.SM2GoPublicKeyImportOpts{})].KeyImport(
 					//pk.(*sm2.PublicKey),
 					sm2pk,
 					&bccsp.SM2GoPublicKeyImportOpts{Temporary: opts.Ephemeral()})
@@ -228,17 +228,17 @@ func (ki *x509PublicKeyImportOptsKeyImporter) KeyImport(raw interface{}, opts bc
 			switch pk.(type) {
 			case *ecdsa.PublicKey:
 				logger.Info("...ecdsa key import...")
-				return ki.bccsp.keyImporters[reflect.TypeOf(&bccsp.ECDSAGoPublicKeyImportOpts{})].KeyImport(
+				return ki.bccsp.KeyImporters[reflect.TypeOf(&bccsp.ECDSAGoPublicKeyImportOpts{})].KeyImport(
 					pk,
 					&bccsp.ECDSAGoPublicKeyImportOpts{Temporary: opts.Ephemeral()})
 			case *rsa.PublicKey:
 				logger.Info("...rsa key import...")
-				return ki.bccsp.keyImporters[reflect.TypeOf(&bccsp.RSAGoPublicKeyImportOpts{})].KeyImport(
+				return ki.bccsp.KeyImporters[reflect.TypeOf(&bccsp.RSAGoPublicKeyImportOpts{})].KeyImport(
 					pk,
 					&bccsp.RSAGoPublicKeyImportOpts{Temporary: opts.Ephemeral()})
 			case *sm2.PublicKey:
 				logger.Info("2...sm2 key import...")
-				return ki.bccsp.keyImporters[reflect.TypeOf(&bccsp.SM2GoPublicKeyImportOpts{})].KeyImport(
+				return ki.bccsp.KeyImporters[reflect.TypeOf(&bccsp.SM2GoPublicKeyImportOpts{})].KeyImport(
 					pk.(*sm2.PublicKey),
 					&bccsp.SM2GoPublicKeyImportOpts{Temporary: opts.Ephemeral()})
 			default:
@@ -254,7 +254,7 @@ func (ki *x509PublicKeyImportOptsKeyImporter) KeyImport(raw interface{}, opts bc
 			switch pk.(type) {
 			case *sm2.PublicKey:
 				logger.Info("3...sm2 key import...")
-				return ki.bccsp.keyImporters[reflect.TypeOf(&bccsp.ECDSAGoPublicKeyImportOpts{})].KeyImport(
+				return ki.bccsp.KeyImporters[reflect.TypeOf(&bccsp.ECDSAGoPublicKeyImportOpts{})].KeyImport(
 					pk,
 					&bccsp.ECDSAGoPublicKeyImportOpts{Temporary: opts.Ephemeral()})
 			default:
