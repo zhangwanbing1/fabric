@@ -7,8 +7,6 @@ package csp
 
 import (
 	"crypto"
-	"crypto/ecdsa"
-	"crypto/x509"
 	"encoding/pem"
 	"io/ioutil"
 	"os"
@@ -18,8 +16,8 @@ import (
 	"github.com/hyperledger/fabric/bccsp"
 	"github.com/hyperledger/fabric/bccsp/factory"
 	"github.com/hyperledger/fabric/bccsp/signer"
-	"github.com/pkg/errors"
 	cspx509 "github.com/hyperledger/fabric/bccsp/x509"
+	"github.com/pkg/errors"
 	"github.com/warm3snow/gmsm/sm2"
 )
 

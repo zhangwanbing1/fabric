@@ -7,7 +7,6 @@ package ca
 
 import (
 	"crypto"
-	"crypto/ecdsa"
 	"crypto/rand"
 	"crypto/x509"
 	"crypto/x509/pkix"
@@ -21,8 +20,8 @@ import (
 	"time"
 
 	"github.com/hyperledger/fabric/bccsp/utils"
-	"github.com/hyperledger/fabric/common/tools/cryptogenCN/csp"
 	cspx509 "github.com/hyperledger/fabric/bccsp/x509"
+	"github.com/hyperledger/fabric/common/tools/cryptogenCN/csp"
 )
 
 type CA struct {
@@ -51,7 +50,7 @@ func NewCA(baseDir, org, name, country, province, locality, orgUnit, streetAddre
 		response = err
 		if err == nil {
 			// get public signing certificate
-			ecPubKey, err := csp.GetECPublicKey(priv)
+			ecPubKey, err := csp.GetPublicKey(priv)
 			response = err
 			if err == nil {
 				template := x509Template()
